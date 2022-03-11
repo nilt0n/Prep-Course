@@ -256,9 +256,30 @@ function esVocal(letra){
     return "Dato incorrecto"
   }
 }
+// mi nombre es niltonoton
+//  0     1   2    3
+// devuelve niltonoton
+function cadenalarga(palabra){
+  var cadena = palabra.split(" ")
+  var mayor = cadena[0]
+  for (let i = 1; i < cadena.length; i++) {
+    if(cadena[i].length > mayor.length){
+       mayor = cadena[i];
+    } 
+  }
+  return mayor;
+}
+//numeros = [1,4,7,8,9,3]
+function sumaimpares(numeros){
+var suma = 0;
 
-
-
+for (let i = 0; i < numeros.length; i++) {
+  if (numeros[i] % 2 != 0) {
+    suma = suma + numeros[i];
+  }
+}
+return suma;
+}
 // No modificar nada debajo de esta línea
 // --------------------------------
 
